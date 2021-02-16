@@ -1,0 +1,154 @@
+<!--Naslijeđivanje base.html i njezinih komponenti-->
+{% extends 'base.html' %}
+
+<!-- Block dio, naslijeđen od base.html, u koji ide poveznica sa css-om  -->
+{% block link_css %} <link rel="stylesheet"  href="{{ url_for('static', filename='styles/cjenik.css') }}">{% endblock %}
+
+<!-- Block dio, naslijeđen od base.html, u koji ide glavni sadržaj stranice  -->
+{% block body %}
+
+<section class="body">
+
+
+<!-- Bootstrap container -->
+<!-- Cijena svakog pojedinačnog proizvoda za određenu količinu -->
+<section class="section1">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="price-table">
+            <div class="price-head">
+              <i class="fab fa-forumbee"></i>
+              <br> <br>
+
+              <h2>VRISAK</h2>
+            </div>
+            <div class="option">
+              <ul class="list">
+              <li><i class="fas fa-hand-point-right"></i> 1 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 70 kn</li>
+              <i class="fas fa-grip-lines fa-5x"></i>
+              <li><i class="fas fa-hand-point-right"></i> 0.5 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 40 kn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="price-table">
+            <div class="price-head">
+              <i class="fab fa-forumbee"></i>
+              <br> <br>
+              <h2>KADULJA</h2>
+            </div>
+            
+            <div class="option">
+              <ul class="list">
+              <li><i class="fas fa-hand-point-right"></i> 1 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 80 kn</li>
+              <i class="fas fa-grip-lines fa-5x"></i>
+              <li><i class="fas fa-hand-point-right"></i> 0.5 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 45 kn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="price-table">
+            <div class="price-head">
+              <i class="fab fa-forumbee"></i>
+              <br> <br>
+              <h2>LIVADA</h2>
+            </div>
+           
+            <div class="option">
+              <ul class="list">
+              <li><i class="fas fa-hand-point-right"></i> 1 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 60 kn</li>
+              <i class="fas fa-grip-lines fa-5x"></i>
+              <li><i class="fas fa-hand-point-right"></i> 0.5 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 35 kn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap container -->
+<!-- Cijena svakog pojedinačnog proizvoda za određenu količinu -->
+<section class="section">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="price-table">
+            <div class="price-head">
+              <i class="fas fa-tint"></i>
+              <br> <br>
+              <h2>PROPOLIS</h2>
+            </div>
+            
+            <div class="option">
+              <ul class="list">
+              <li><i class="fas fa-hand-point-right"></i> 20 ml</li>
+              <li><i class="fas fa-hand-point-right"></i> 50 kn</li>
+              <i class="fas fa-grip-lines fa-5x"></i>
+              <li><i class="fas fa-hand-point-right"></i> 1 kg(granule)</li>
+              <li><i class="fas fa-hand-point-right"></i> 800 kn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="price-table">
+            <div class="price-head">
+              <i class="fas fa-mortar-pestle"></i>
+              <br> <br>
+              <h2>PELUD</h2>
+            </div>
+            
+            <div class="option">
+              <ul class="list">
+              <li><i class="fas fa-hand-point-right"></i> 1 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 60 kn</li>
+              <i class="fas fa-grip-lines fa-5x"></i>
+              <li><i class="fas fa-hand-point-right"></i> 0.5 kg</li>
+              <li><i class="fas fa-hand-point-right"></i> 30 kn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+          <div class="price-table">
+            <div class="price-head">
+              <i class="fas fa-glass-whiskey"></i>
+              <br> <br>
+              <h2>MEDICA</h2>
+            </div>
+            
+            <div class="option">
+              <ul class="list">
+              <li><i class="fas fa-hand-point-right"></i> 1 l</li>
+              <li><i class="fas fa-hand-point-right"></i> 70 kn</li>
+              <i class="fas fa-grip-lines fa-5x"></i>
+              <li><i class="fas fa-hand-point-right"></i> 0.5 l</li>
+              <li><i class="fas fa-hand-point-right"></i> 40 kn</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+</section>
+{% endblock %}
