@@ -10,10 +10,11 @@
         <li><a href="{{url_for('login')}}">Prijava</a></li>
         {% endif %}
     </ul>
-    
+
+
     @app.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    flash('Odjavili ste se.', category='success')
-    return redirect(url_for('index'))
+    @login_required
+    def logout():
+        logout_user()
+        flash('Odjavili ste se.', category='success')
+        return redirect(url_for('index'))
